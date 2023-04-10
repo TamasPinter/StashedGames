@@ -42,8 +42,10 @@ function App() {
     <ApolloProvider client={client}>
       
         <Router>
-          <div>
+          <div className="flex-column">
             <Nav />
+            <div className="container">
+
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
@@ -54,6 +56,7 @@ function App() {
               <Route path="/game3" element={<Game3 />} />
               <Route path="/game4" element={<Game4 />} />
             </Routes>
+            </div>
             <Footer />
           </div>
         </Router>
